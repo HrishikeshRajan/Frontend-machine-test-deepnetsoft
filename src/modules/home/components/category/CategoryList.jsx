@@ -33,7 +33,8 @@ const CategoryList = ({data}) => {
       
         <Card className=' relative border-2  w-full mt-10 px-2 xl:px-10 pb-20 flex flex-col justify-center items-center '>
         <Image className='xl:absolute top-0 left-0 w-28 xl:w-96 xl:top-[-300px] xl:left-[30px]' src={data.card.images.left} />
-        <Heading  className='text-white py-20 text-center xl:heading-shadow font-extrabold text-2xl xl:text-5xl both' > {data.card.title} </Heading>
+        <Heading className='text-white w-40 xl:w-full text-center text-4xl xl:text-5xl font-extrabold heading-shadow bar '><span>{data.card.title}</span></Heading>
+       
         {/* <Image className='absolute w-20 xl:w-96 top-[-160px] right-[80px]' src={data.card.images.right} /> */}
 
         <ul className='grid grid-cols-1 sm:grid-cols-2 gap-4 pa-dot-leaders'>

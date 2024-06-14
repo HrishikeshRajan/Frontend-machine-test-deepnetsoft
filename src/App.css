@@ -88,3 +88,27 @@ ul.pa-dot-leaders span+span {
     right: 0;
     top: 50%;
 }
+
+@media (max-width: 768px) {
+  .bar {
+    width: 90%; 
+  }
+
+  .bar:before,
+  .bar:after {
+    width: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bar {
+    width: 90%; 
+  }
+
+  .bar:before,
+  .bar:after {
+    width: 40px;
+  }
+}
+
+
