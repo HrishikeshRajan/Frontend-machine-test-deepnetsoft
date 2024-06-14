@@ -11,7 +11,7 @@ const HeadingGenerator = ({item}) => {
         <span className="text-xl">{item.name}</span>
           <span className="text-xl ">{item.price}</span>
           <div>
-              <p className="text-white mt-2 font-normal text-[#FFFFFFBF] font-[Kelly Slab]">{item.details}</p>
+              <p className="text-white text-xs mt-2 font-normal text-[#FFFFFFBF] font-[Kelly Slab]">{item.details}</p>
           </div>
       </li>
     );
@@ -24,7 +24,6 @@ const CategoryList = ({data}) => {
   return (
     <Background  url={data.card.images.baseImage}   className="relative py-20 w-full xl:pt-20 px-2 xl:px-40  flex justify-center xl:gap-10 gap-2">
         <Card className='relative  border-2 xl:relative w-full mt-10 px-2 xl:px-10 pb-20 flex flex-col justify-center items-center '>
-            
              <Card className='w-full m-10 flex justify-center flex-row items-center'>
                  <Image className='w-16 left-0 absolute mb-8 md:w-28 md:h-auto xl:w-96 xl:absolute xl:left-[-180px] xl:top-[-400px]' src={data.card.images.left} />
                  <Heading className='w-6/12 text-white w-30 md:w-6/12 xl:w-6/12 text-center text-2xl xl:text-5xl font-extrabold heading-shadow drinks'><span>{data.card.title}</span></Heading>
