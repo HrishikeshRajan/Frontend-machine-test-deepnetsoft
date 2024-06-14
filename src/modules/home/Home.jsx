@@ -8,6 +8,8 @@ import Smoke from "./components/smoke/Smoke"
 import Card from "./components/card/Card"
 import Order from "./components/order/Order"
 import OrderInfo from "./components/order/OrderInfo"
+import Contact from "./components/footer/Contact"
+
 const Home = () => {
 
   const config = useConfig()
@@ -22,6 +24,7 @@ const Home = () => {
         <Smoke data =  {getCard(config.cards,'smoke')} /> 
         <Order data =  {getCard(config.cards,'order-button')} />
         <OrderInfo data =  {getCard(config.cards,'order-info')} />
+        <Contact data =  {getCard(config.cards,'footer-contact')} />
       </Card>
     </div>
   )

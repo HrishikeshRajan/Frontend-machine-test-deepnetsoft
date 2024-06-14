@@ -5,7 +5,6 @@ import Card from "../card/Card";
 
 const Order = ({data}) => {
     if(!data) return null;
-    console.log(data)
   return (
     <Background url={data.card.images.baseImage} width={'10vh'} >
         <Card className='w-full flex justify-center items-center py-5'>
