@@ -2,14 +2,60 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
-body{
+
+body {
   margin: 0;
 }
 
 
-.heading-shadow{
+.heading-shadow {
   text-shadow: 4px 4px #800020;
 
+}
+.both{
+  display: inline-block; /* Ensure the element is inline-block */
+  font-size: 30px;
+  position: relative; /* Position relative for pseudo-elements */
+  line-height: 1;
+}
+.both::before,
+.both::after {
+  display: inline-block;
+  content: "";
+  border-top: .3rem solid #ffffff;
+  width: 2rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+  vertical-align: middle;
+}
+
+
+ul.pa-dot-leaders {
+  /* max-width: 10em; */
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none
+}
+
+ul.pa-dot-leaders li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  color:white;
+  border-bottom: 1px dotted #fff;
+  content:
+    ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+}
+
+ul.pa-dot-leaders span:first-child {
+  padding-right: 0.33em;
+  color: white;
+}
+
+ul.pa-dot-leaders span+span {
+  float: right;
+  padding-left: 0.33em;
+  color: white;
 }
