@@ -9,6 +9,7 @@ import Card from "./components/card/Card"
 import Order from "./components/order/Order"
 import OrderInfo from "./components/order/OrderInfo"
 import Contact from "./components/footer/Contact"
+import Credits from "./components/footer/Credits"
 
 const Home = () => {
 
@@ -25,6 +26,7 @@ const Home = () => {
         <Order data =  {getCard(config.cards,'order-button')} />
         <OrderInfo data =  {getCard(config.cards,'order-info')} />
         <Contact data =  {getCard(config.cards,'footer-contact')} />
+        <Credits data =  {getCard(config.cards,'footer-credits')} />
       </Card>
     </div>
   )
