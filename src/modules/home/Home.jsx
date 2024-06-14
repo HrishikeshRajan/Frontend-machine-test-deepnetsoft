@@ -10,10 +10,16 @@ import Order from "./components/order/Order"
 import OrderInfo from "./components/order/OrderInfo"
 import Contact from "./components/footer/Contact"
 import Credits from "./components/footer/Credits"
+import Loader from "./components/loader/Loader"
 
 const Home = () => {
 
-  const config = useConfig()
+  const {config, error, loading} = useConfig()
+
+  if(error) return null
+  if(loading) return <Loader />
+  if(!config) return null
+
 
   return (
     <div>
