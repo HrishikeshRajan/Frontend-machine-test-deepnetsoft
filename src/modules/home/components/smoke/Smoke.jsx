@@ -14,7 +14,7 @@ const Smoke = ({data}) => {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.8)), url(${data.card.images.baseImage})`,
         minHeight: '50vh'
      }}
-     className="relative w-full px-2 xl:px-40  flex justify-center xl:gap-10 gap-2"
+     className="relative w-full px-2 xl:px-40 pt-5 flex justify-center xl:gap-10 gap-2"
     >
        <Card className=' relative border-2  w-full  px-2  xl:px-10 pb-20 flex flex-col justify-center items-center '>
           <Image src={data.card.icon.url} className='w-[82.11px] mt-20 mb-3' />

@@ -9,9 +9,9 @@ const Credits = ({data}) => {
         <ul className="text-white flex flex-col text-center xl:flex-row xl:justify-between">
             <li className="text-[#857878]">{data.card.card[0].title}</li>
       
-             <li className="flex flex w-full pt-2 xl:pt-0 xl:w-6/12 justify-evenly text-center ">
+             <ul className="flex flex w-full pt-2 xl:pt-0 xl:w-6/12 justify-evenly text-center ">
              {data.card.card.slice(1).map((credit) => <li className="text-[#857878]" key={credit.id}>{credit.title}</li>)}
-             </li>
+             </ul>
         </ul>
     </Card>
   )

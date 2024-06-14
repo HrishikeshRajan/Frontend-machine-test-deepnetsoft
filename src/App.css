@@ -112,3 +112,66 @@ ul.pa-dot-leaders span+span {
 }
 
 
+
+.drinks{
+  width: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.drinks:before{
+  content: '';
+  width: 100px;
+  height: 3px;
+  display: block;
+    position: absolute;
+    background: #857878;
+    left: 0;
+    top: 50%;
+}
+
+.drinks:after{
+  content: '';
+  width: 100px;
+  height: 3px;
+  display: block;
+    position: absolute;
+    background: #857878;
+    right: 0;
+    top: 50%;
+}
+
+@media (max-width: 1024px) {
+  .drinks {
+    width: 10%; 
+  }
+
+  .drinks:before,
+  .drinks:after {
+    width: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .drinks { 
+    width: 50%; 
+  }
+
+  .drinks:before,
+  .drinks:after {
+    width: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drinks  {
+    width: 70%; 
+  }
+
+  .drinks:before,
+  .drinks:after {
+    width: 40px;
+  }
+}
+
+

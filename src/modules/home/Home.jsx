@@ -19,7 +19,7 @@ const Home = () => {
     <div>
       <Navbar data = {getCard(config.cards,'header')} /> 
       <Banner data = {getCard(config.cards,'banner')} />
-      <Card className='relative' >
+      <Card className='relative ' >
         <Category data = {getCard(config.cards,'categories')} />
         <CategoryList data =  {getCard(config.cards,'category')} />
         <Smoke data =  {getCard(config.cards,'smoke')} /> 
