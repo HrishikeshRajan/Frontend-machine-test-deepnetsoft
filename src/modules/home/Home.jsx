@@ -7,7 +7,7 @@ import CategoryList from "./components/category/CategoryList"
 import Smoke from "./components/smoke/Smoke"
 import Card from "./components/card/Card"
 import Order from "./components/order/Order"
-
+import OrderInfo from "./components/order/OrderInfo"
 const Home = () => {
 
   const config = useConfig()
@@ -21,6 +21,7 @@ const Home = () => {
         <CategoryList data =  {getCard(config.cards,'category')} />
         <Smoke data =  {getCard(config.cards,'smoke')} /> 
         <Order data =  {getCard(config.cards,'order-button')} />
+        <OrderInfo data =  {getCard(config.cards,'order-info')} />
       </Card>
     </div>
   )
